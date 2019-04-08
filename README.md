@@ -1,4 +1,5 @@
 drepl.snap
+dd
 ========
 
 This project defines a snap package for DREPL, a tool for 
