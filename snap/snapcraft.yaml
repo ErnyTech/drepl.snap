@@ -24,7 +24,7 @@ parts:
     organize:
       drepl: bin/drepl
     stage:
-      - bin/drepl
+      - drepl
     build-snaps:
       - dmd
       - dub
