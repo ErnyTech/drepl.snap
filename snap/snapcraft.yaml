@@ -32,9 +32,6 @@ parts:
   phobos-shared:
     plugin: nil
     stage:
-      - try:
-        - lib32
-      - try:
-        - lib64
+      - lib*
     stage-snaps:
       - dmd
