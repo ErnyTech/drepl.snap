@@ -9,7 +9,7 @@ grade: stable
 
 apps:
   drepl:
-    command: bin/drepl
+    command: env LD_LIBRARY_PATH=$SNAP/lib64:$SNAP/lib32 bin/drepl
 
 parts:
   drepl:
