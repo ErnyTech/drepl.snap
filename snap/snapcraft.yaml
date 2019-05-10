@@ -21,11 +21,10 @@ parts:
     override-build : |
       snapcraftctl build
       /snap/bin/dub build -b release --compiler=/snap/bin/dmd --force
-      cp drepl "$SNAPCRAFT_PART_INSTALL"
-    organize:
-      drepl: bin/drepl
+      mkdir "$SNAPCRAFT_PART_INSTALL/bin"
+      cp drepl "$SNAPCRAFT_PART_INSTALL/bin"
     stage:
-      - drepl
+      - bin/drepl
     build-snaps:
       - dmd
       - dub
